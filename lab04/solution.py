@@ -33,4 +33,7 @@ def above_average(names, scores):
     return new_names
 
 
+def does_nothing_a():
+    print('fuck you')
+
 #print(ranking(names_test, scores_test))
