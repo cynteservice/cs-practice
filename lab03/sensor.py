@@ -3,6 +3,7 @@ n = int(input())
 records = []
 
 max_record, errors, threshold_crosses = 0,0,0
+fea = 0
 
 for i in range(n):
     r = input()
