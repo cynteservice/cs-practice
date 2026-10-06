@@ -36,4 +36,7 @@ def above_average(names, scores):
 def does_nothing_a():
     print('fuck you')
 
+def does_nothing_b():
+    print('you should kill yourself NOW')
+
 #print(ranking(names_test, scores_test))
