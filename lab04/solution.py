@@ -37,10 +37,7 @@ def above_average(names, scores):
     return new_names
 
 
-def does_nothing_a():
-    print('fuck you')
-
-def does_nothing_b():
-    print('you should kill yourself NOW')
-
-print(winner(["Аня", "Боря"], [-3.0, -2.8]))
+if __name__=='__main__':
+    names_test =  ["Аня", "Боря", "Вика"]
+    scores_test = [7.0,   9.0,    912312.0]
+    print(winner(names_test, scores_test))
