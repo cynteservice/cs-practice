@@ -7,8 +7,8 @@ def winner(names, scores):
     w, hs = None, 0
     i = 0
     for student in names:
-        if max(scores[i],0)>hs:
-            hs = max(0,scores[i])
+        if w==None or max(scores[i],0)>hs:
+            hs = max(scores[i],0)
             w = student
         i+=1
     return w
