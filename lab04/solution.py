@@ -8,7 +8,7 @@ def winner(names, scores):
     i = 0
     for student in names:
         if max(scores[i],0)>hs:
-            hs = scores[i]
+            hs = max(0,scores[i])
             w = student
         i+=1
     return w
@@ -16,7 +16,10 @@ def winner(names, scores):
 def average(scores):
     if len(scores)==0:
         return 0.0
-    return round(abs(sum(scores))/len(scores), 2)
+    s = 0
+    for i in scores:
+        sum += max(i,0)
+    return round(s/len(scores), 2)
 
 def ranking(names, scores):
     new_names = names.copy()
