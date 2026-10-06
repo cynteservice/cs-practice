@@ -2,12 +2,13 @@
 #scores_test = [7.0,   9.0,    9.0]
 
 #python solution.py
+import math
 
 def winner(names, scores):
-    w, hs = None, 0
+    w, hs = None, -1E+23
     i = 0
     for student in names:
-        if w==None or max(scores[i],0)>hs:
+        if scores[i]>hs:
             hs = max(scores[i],0)
             w = student
         i+=1
