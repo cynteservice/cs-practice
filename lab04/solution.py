@@ -9,7 +9,7 @@ def winner(names, scores):
     i = 0
     for student in names:
         if scores[i]>hs:
-            hs = max(scores[i],0)
+            hs = abs(scores[i])
             w = student
         i+=1
     return w
@@ -43,4 +43,4 @@ def does_nothing_a():
 def does_nothing_b():
     print('you should kill yourself NOW')
 
-#print(ranking(names_test, scores_test))
+print(winner(["Аня", "Боря"], [-3.0, -1.0]))
