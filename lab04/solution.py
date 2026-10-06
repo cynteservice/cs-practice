@@ -18,7 +18,7 @@ def average(scores):
         return 0.0
     s = 0
     for i in scores:
-        sum += max(i,0)
+        s += max(i,0)
     return round(s/len(scores), 2)
 
 def ranking(names, scores):
