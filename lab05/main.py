@@ -17,3 +17,5 @@ if __name__ == "__main__":
 
     with open(folder / "summary.csv", "w", encoding="utf-8") as out:
         out.write(to_csv(counts))
+
+# dots kys
