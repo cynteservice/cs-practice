@@ -1,20 +1,21 @@
 def read_rows(lines):
     rows = []
-    headers = []
+    headers = None
 
     for data in lines:
         data = data.strip()
         if data=='': continue
         data = data.split(',')
+
         if len(data)==0: continue
 
-        if len(headers)==0:
+        if headers is None:
             headers = data
         else:
             if len(data)==len(headers):
                 new_data = {}
                 for i in range(0,len(headers)):
-                    new_data[headers[i]] = data[i]
+                    new_data[headers[i]] = data[i].strip()
 
                 rows.append(new_data)
 
