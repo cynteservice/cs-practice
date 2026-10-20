@@ -1,10 +1,10 @@
 def count_items(values):
     result = {}
-    for v in values:
+    for key in values:
         if not key in result:
-            result[v] = 1
+            result[key] = 1
         else:
-            result[v] += 1
+            result[key] += 1
     return result
 
 def unique_sorted(values):
