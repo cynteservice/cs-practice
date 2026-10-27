@@ -10,7 +10,7 @@ def block(matrix, rows, columns):
     return matrix[numpy.ix_(rows, columns)].round(6).tolist()
 
 def column_means(matrix):
-    array = np.asarray(matrix, dtype=float)
+    array = numpy.asarray(matrix, dtype=float)
     if array.size == 0:
         return []
     return array.mean(axis=0).round(6).tolist()
