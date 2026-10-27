@@ -13,7 +13,7 @@ def column_means(matrix: list[list[float]]) -> list[float]:
     array = np.asarray(matrix, dtype=float)
     if array.size == 0:
         return []
-    return array.mean(axis=0).round(6).tolist()()
+    return array.mean(axis=0).round(6).tolist()
 
 def column_range(matrix, column):
     if len(matrix)==0:
