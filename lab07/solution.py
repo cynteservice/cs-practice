@@ -7,7 +7,7 @@ def reshape_rows(values, width):
 
 def block(matrix, rows, columns):
     matrix = numpy.asarray(matrix)
-    return matrix[np.ix_(rows, columns)].round(6).tolist()
+    return matrix[numpy.ix_(rows, columns)].round(6).tolist()
 
 def column_means(matrix):
     if len(matrix)==0:
