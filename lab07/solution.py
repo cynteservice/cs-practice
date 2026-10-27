@@ -21,7 +21,7 @@ def column_range(matrix, column):
     matrix = numpy.asarray(matrix)
     data = matrix[:,column]
     print(data)
-    return round(data.max() - data.min(), 6)
+    return round(float(data.max() - data.min()), 6)
 
 print('aaa')
 print(column_range([[1, 2], [5, 7]], 1))
