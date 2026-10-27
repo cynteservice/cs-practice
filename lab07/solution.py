@@ -9,11 +9,11 @@ def block(matrix, rows, columns):
     matrix = numpy.asarray(matrix)
     return matrix[numpy.ix_(rows, columns)].round(6).tolist()
 
-def column_means(matrix):
-    if len(matrix)==0:
+def block(matrix,rows,columns):
+    array = numpy.asarray(matrix)
+    if array.size == 0:
         return []
-    matrix = numpy.asarray(matrix)
-    return numpy.round(numpy.mean(matrix,axis=1), 6).tolist()
+    return array[numpy.ix_(rows, columns)].round(6).tolist()
 
 def column_range(matrix, column):
     if len(matrix)==0:
