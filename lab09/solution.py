@@ -18,7 +18,7 @@ def change_vector(values):
     values = numpy.array(values.copy())
     values[2:min(5, len(values))] = 99
     values[::2]=-1
-    return values
+    return values.tolist()
 
 def cap_above(values, limit):
     values = numpy.array(values)
