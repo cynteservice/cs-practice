@@ -15,7 +15,7 @@ print("\nЗадание 2. Срезы вектора")
 print("Третий элемент:", hours[2])
 print("Последний элемент:", hours[-1])
 print("Индексы 2–5:", hours[2:6])
-print("Каждый второй:", hours[::2])
+print("Каждый второй:", hours[::3])
 print("В обратном порядке:", hours[::-1])
 
 print("\nЗадание 3. Строки и столбцы")
@@ -68,7 +68,7 @@ small_matrix[1:, 1:] = 9
 print("Пример с матрицей:\n", small_matrix)
 
 # copy() создаёт отдельный массив чтоьы не трогать hours
-changed_hours = hours.copy()
+changed_hours = hours[::]
 changed_hours[2:5] = 99
 changed_hours[::2] = -1
 print("Изменённый hours:", changed_hours)
