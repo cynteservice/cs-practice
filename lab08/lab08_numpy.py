@@ -68,7 +68,7 @@ small_matrix[1:, 1:] = 9
 print("Пример с матрицей:\n", small_matrix)
 
 # copy() создаёт отдельный массив чтоьы не трогать hours
-changed_hours = hours[::]
+changed_hours = hours.copy()
 changed_hours[2:5] = 99
 changed_hours[::2] = -1
 print("Изменённый hours:", changed_hours)
