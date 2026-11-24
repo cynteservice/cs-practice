@@ -1,7 +1,7 @@
 import numpy
 
 def make_table(rows, columns):
-    print()
+    return numpy.arange(rows*columns).reshape(rows,columns).tolist()
 
 def rectangle(matrix, row_start, row_stop, column_start, column_stop):
     matrix = numpy.array(matrix)
@@ -34,9 +34,10 @@ def solve_system(matrix, vector):
     return numpy.linalg.solve(matrix, vector).tolist()
 
 def tensor_channel_mean(tensor):
-    print()
+    tensor = numpy.array(tensor)
+    return tensor.mean(axis=-1).tolist()
 
 def point_distance(left, right):
     left = numpy.array(left)
     right = numpy.array(right)
-    return round(numpy.linalg.norm(first-second), 6)
+    return round(numpy.linalg.norm(left-right), 6)
